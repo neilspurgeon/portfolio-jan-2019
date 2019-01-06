@@ -3,7 +3,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: var(--su) 5vw 0;
+  padding: var(--su) 0 0;
 }
 
 .nav {
@@ -35,4 +35,9 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.list > li {
+  display: inline-block;
+  margin-left: 1em;
 }
