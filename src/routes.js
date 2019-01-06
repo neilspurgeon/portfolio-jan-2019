@@ -8,7 +8,6 @@ import Projects from 'pages/Projects/Projects.js';
 import ProjectLayout from 'layouts/ProjectLayout/ProjectLayout';
 import NotFound from 'pages/NotFound/NotFound.js';
 import ReactGA from 'react-ga';
-import Cursor from 'components/Cursor/Cursor.js';
 
 ReactGA.initialize('UA-45097231-1');
 
@@ -19,19 +18,22 @@ const logPageView = () => {
 };
 
 const ProjectRoute = ({ component: Component, ...rest }) => (
-  <Route {...rest} render={props => (
-    <ProjectLayout
-      title={rest.title}
-      subTitle={rest.subTitle}
-      hero={rest.hero}
-      nextProjectTitle={rest.nextProjectTitle}
-      nextProjectImage={rest.nextProjectImage}
-      nextProjectAltText={rest.nextProjectAltText}
-      nextProjectPath={rest.nextProjectPath}
+  <Route
+    {...rest}
+    render={props => (
+      <ProjectLayout
+        title={rest.title}
+        subTitle={rest.subTitle}
+        hero={rest.hero}
+        nextProjectTitle={rest.nextProjectTitle}
+        nextProjectImage={rest.nextProjectImage}
+        nextProjectAltText={rest.nextProjectAltText}
+        nextProjectPath={rest.nextProjectPath}
       >
-      <Component {...props}/>
-    </ProjectLayout>
-  )}/>
+        <Component {...props} />
+      </ProjectLayout>
+    )}
+  />
 );
 
 const ScrollToTop = () => {
@@ -39,11 +41,10 @@ const ScrollToTop = () => {
   return null;
 };
 
-const Routes = (props) => (
-  <Cursor>
+const Routes = props => (
+  <div>
     <Route path="/" component={logPageView} />
     <Route path="/" component={ScrollToTop} />
-    {/* <Route path="/" component={Cursor} /> */}
 
     <Switch>
       <Route exact path="/" component={Home} />
@@ -53,10 +54,11 @@ const Routes = (props) => (
 
       {projects.map((project, i, arr) => {
         // if last project, start back at the begining
-        let nextProject = (i+1 < arr.length) ? arr[i+1] : arr[0];
+        let nextProject = i + 1 < arr.length ? arr[i + 1] : arr[0];
         return (
           <ProjectRoute
-            exact path={project.data.path}
+            exact
+            path={project.data.path}
             component={project.component}
             title={project.data.title}
             subTitle={project.data.subTitle}
@@ -65,14 +67,14 @@ const Routes = (props) => (
             nextProjectImage={nextProject.data.card}
             nextProjectAltText={nextProject.data.altText}
             nextProjectPath={nextProject.data.path}
-            key={i} />
+            key={i}
+          />
         );
       })}
 
       <Route component={NotFound} />
-
     </Switch>
-  </Cursor>
+  </div>
 );
 
 export default Routes;
