@@ -1,6 +1,8 @@
 @import './variables.css';
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 img {
   display: block;
@@ -8,11 +10,13 @@ img {
 }
 
 /*62.5% * 16px = 10px base font size*/
-html { font-size: 62.5%; }
+html {
+  font-size: 62.5%;
+}
 
 body {
   font-size: 1.6rem;
-  font-family: "maison neue", sans-serif;
+  font-family: 'maison neue', sans-serif;
   font-weight: 400;
   color: var(--color-medium-text);
   line-height: 1.618;
@@ -22,17 +26,17 @@ body {
 
 h1,
 .h1 {
-  font-family: 'gt sectra', serif;
+  font-family: 'maison neue', sans-serif;
   font-weight: 400;
   font-size: 2.6rem;
   line-height: 1.4;
   color: var(--color-dark-text);
 
-  @media (--viewport-small)  {
+  @media (--viewport-small) {
     font-size: 3.2rem;
   }
 
-   @media (--viewport-medium)  {
+  @media (--viewport-medium) {
     font-size: 3.8rem;
   }
 
@@ -43,22 +47,21 @@ h1,
   @media (--viewport-xlarge) {
     font-size: 4.8rem;
   }
-
 }
 
 h2,
 .h2 {
-  font-family: 'gt sectra', serif;
+  font-family: 'maison neue', sans-serif;
   font-weight: 400;
   font-size: 2rem;
   line-height: 1.618;
   color: var(--color-dark-text);
 
-  @media (--viewport-small)  {
+  @media (--viewport-small) {
     font-size: 2.4rem;
   }
 
-   @media (--viewport-medium)  {
+  @media (--viewport-medium) {
     font-size: 2.6rem;
   }
 
@@ -69,17 +72,17 @@ h2,
 
 h3,
 .h3 {
-  font-family: 'gt sectra', serif;
+  font-family: 'maison neue', sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 1.618;
   color: var(--color-dark-text);
 
-  @media (--viewport-small)  {
+  @media (--viewport-small) {
     font-size: 2rem;
   }
 
-   @media (--viewport-medium)  {
+  @media (--viewport-medium) {
     font-size: 2.2rem;
   }
 
@@ -90,29 +93,28 @@ h3,
 
 h4,
 .h4 {
-  font-family: 'gt sectra', serif;
+  font-family: 'maison neue', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.618;
   color: var(--color-dark-text);
 
-  @media (--viewport-medium)  {
+  @media (--viewport-medium) {
     font-size: 1.8rem;
   }
 
-  @media (--viewport-large)  {
+  @media (--viewport-large) {
     font-size: 2rem;
   }
 }
 
-
 p,
 .p {
-  font-family: "maison neue", sans-serif;
+  font-family: 'maison neue', sans-serif;
   font-size: 1.7rem;
   font-weight: 400;
   line-height: 2;
-  letter-spacing:  .01em;
+  letter-spacing: 0.01em;
   margin: 1.6em 0 0;
   color: var(--color-medium-text);
   @media screen and (min-width: 768px) {
@@ -126,7 +128,7 @@ p.pSmall {
 
 .label,
 p.label {
-  font-family: "maison neue", sans-serif;
+  font-family: 'maison neue', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.6;
@@ -140,7 +142,7 @@ p.label {
 }
 
 .sectionHeader {
-  font-family: "gt sectra", times, serif;
+  font-family: 'maison neue', sans-serif;
   /* font-size: 1.4rem; */
   /* font-weight: 400; */
   /* line-height: 1.6; */
@@ -167,9 +169,9 @@ p ~ .sectionHeader {
   text-decoration: none;
   width: fit-content;
   border: 1px solid #000;
-  padding: 1em 4em .9em 1em;
+  padding: 1em 4em 0.9em 1em;
   margin-right: -100px;
-  transition: padding .3s cubic-bezier(.34,.15,.31,.92);
+  transition: padding 0.3s cubic-bezier(0.34, 0.15, 0.31, 0.92);
   will-change: padding;
 }
 
@@ -179,13 +181,13 @@ p ~ .sectionHeader {
 
 .arrowLink:before,
 .arrowLink:after {
-  content: " ";
+  content: ' ';
   width: 15px;
   height: 9px;
   position: absolute;
   right: 3em;
   opacity: 0;
-  transition: .3s cubic-bezier(.34,.15,.31,.92);
+  transition: 0.3s cubic-bezier(0.34, 0.15, 0.31, 0.92);
   transition-delay: 0s;
   /* background-image: url(../assets/images/link-arrow-dark.svg); */
   background-position: center right;
@@ -201,11 +203,11 @@ p ~ .sectionHeader {
 }
 
 .arrowLink:hover:before {
-    transform: translate(2em, 0);
-    opacity: 1;
-    right: 4em
+  transform: translate(2em, 0);
+  opacity: 1;
+  right: 4em;
 }
 .arrowLink:hover:after {
-    transform: translate(2em, 0);
-    opacity: 0;
+  transform: translate(2em, 0);
+  opacity: 0;
 }
