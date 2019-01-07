@@ -24,10 +24,10 @@ const Home = props => {
         <section className={styles.intro}>
           <div className={styles.introText}>
             <h1>
-              I’m a designer & developer based in San Francisco. I’m currently a
-              designer at Wells Fargo working on commercial banking software. In
-              my free time I like to build JavaScript apps. Checkout out my
-              latest React Native project Queue.
+              I’m a <u>designer & developer</u> based in <u>San Francisco</u>.
+              I’m currently at <u>Wells Fargo</u> designing commercial banking
+              software. In my free time I like to code JavaScript based side
+              projects.
             </h1>
           </div>
         </section>
