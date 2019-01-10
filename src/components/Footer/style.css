@@ -1,29 +1,23 @@
 @import '../../sharedStyles/variables.css';
 
 .footer {
-  @apply --vertical-margin;
   margin-bottom: 0;
   line-height: 2.4;
-  background: var(--color-dark-bg);
-  color: var(--color-white-text);
+  color: var(--color-dark-text);
   -webkit-font-smoothing: antialiased;
-  letter-spacing: .01em;
-}
-
-.footer.inView {
-  opacity: 1;
 }
 
 .footerContainer {
-  @apply --vertical-spacing;
   display: grid;
+  padding-bottom: 2em;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "contact contact"
-                       "social  nav";
+  grid-template-areas:
+    'contact contact'
+    'social social';
 
   @media (--viewport-small) {
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-areas: "contact social nav";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'contact social';
   }
 }
 
@@ -32,29 +26,20 @@
   padding: 0;
 }
 
+.list li {
+  display: inline-block;
+  margin-left: 1em;
+}
+
 .contact {
   grid-area: contact;
 }
 
 .social {
   grid-area: social;
-}
 
-.nav {
-  grid-area: nav;
-  text-align: right;
-}
-
-.navLink {
-  text-decoration: none;
-  color: inherit;
-  transition: .2s ease opacity;
-}
-
-.navLink:hover {
-  opacity: .6;
-}
-
-.navLink.isActive {
-  opacity: .5;
+  @media (--viewport-small) {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
