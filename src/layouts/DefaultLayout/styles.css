@@ -1,0 +1,23 @@
+@import '../../sharedStyles/variables.css';
+
+.pushFooter {
+  min-height: calc(100vh - 102px);
+}
+
+.pageLayout {
+  padding-top: 10em;
+  padding-bottom: 10em;
+
+  @media (--viewport-small) {
+    display: grid;
+    grid-template-columns: 25% 75%;
+  }
+}
+
+.header {
+  background-color: '#333';
+}
+
+.headerText {
+  position: relative;
+}

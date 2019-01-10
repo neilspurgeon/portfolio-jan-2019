@@ -1,102 +1,60 @@
 import React from 'react';
-import Container from 'components/Container/Container.js';
-import Header from 'components/Header/Header.js';
-import Footer from 'components/Footer/Footer.js';
+import DefaultLayout from 'layouts/DefaultLayout/DefaultLayout.js';
 import styles from './styles.css';
-import shared from 'sharedStyles/index.css';
-import portrait from './profile.jpg';
-import Image from 'components/Image/Image.js';
-import Playlist from 'components/Playlist/Playlist.js';
-import { Helmet } from 'react-helmet';
 
-const headingClass = [shared.h3, styles.aboutSectionHeader].join(' ');
+const header = <h1 className={styles.header}>About</h1>;
+
+const content = (
+  <div>
+    <h1 className={styles.intro}>
+      I'm a designer and developer currently based in San Francisco. While
+      primarily working as designer, I write lots of code outside of work and
+      love the empowerment it gives me.
+    </h1>
+    <h2 className={styles.sectionHeading}>Experience</h2>
+    <p className={styles.body}>
+      Wells Fargo — San Francisco, CA
+      <br />
+      Visual Designer, Jul. 2018 - Present
+    </p>
+    <p className={styles.body}>
+      Hewlett Packard — Palo Alto, CA
+      <br />
+      Designer (Contract), Mar. 2018 - Jul. 2018
+    </p>
+    <p className={styles.body}>
+      Hathway — San Luis Obispo, CA
+      <br />
+      Senior Designer, Jan. 2017 - Feb. 2018
+      <br />
+      Visual Designer, Sep. 2015 - Dec.
+    </p>
+    <p className={styles.body}>
+      Indicate Design Groupe — San Francisco, CA
+      <br />
+      Designer, Apr. 2014 - Apr. 2015
+    </p>
+    <h2 className={styles.sectionHeading}>Education</h2>
+    <p className={styles.body}>
+      Education General Assembly — San Francisco, CA
+      <br />
+      Web Development Immersive
+      <br />
+      Completed 2015
+    </p>
+
+    <p className={styles.body}>
+      California Polytechnic State University — San Luis Obispo,
+      <br />
+      CA BFA Art & Design; Graphic Design Concentration
+      <br />
+      Graduated 2013
+    </p>
+  </div>
+);
 
 const About = () => {
-  return (
-    <div>
-
-      <Helmet>
-        <title>About – Neil Spurgeon. Product Designer</title>
-      </Helmet>
-
-      <Header />
-
-      <Container type="inset">
-        <header className={styles.header}>
-          <Image
-            className={styles.headerImage}
-            image={portrait}
-            altText="portrait of me"
-            sizes="100vw, 50vw"
-          />
-
-          <div className={styles.headerText}>
-            <p className={shared.h2}>I'm a designer currently based in San Luis Obispo, California. For the past few years, I've focused mainly on web and mobile app design, while also taking great interest in front-end web development.</p>
-            <p className={shared.h2}>I'm currently looking for a full-time position that focuses on design, but ideally allows opportunities to code as well.</p>
-          </div>
-
-        </header>
-
-
-        <section className={styles.aboutSection}>
-          <h2 className={headingClass}>Experience</h2>
-
-          <div className={styles.aboutSectionContent}>
-            <p>Hathway — San Luis Obispo, CA<br />
-              <span>Senior Designer, Jan. 2017 - Feb. 2018</span><br />
-              <span>Visual Designer, Sep. 2015 - Dec. 2016</span>
-            </p>
-            <p>Indicate Design Groupe — San Francisco, CA<br />
-              <span>Designer, April. 2014 - April. 2015</span>
-            </p>
-          </div>
-        </section>
-
-
-        <section className={styles.aboutSection}>
-          <h2 className={headingClass}>Education</h2>
-
-          <div className={styles.aboutSectionContent}>
-            <p>California Polytechnic State University — San Luis Obispo, CA<br />
-              <span>BFA Art & Design; Graphic Design Concentration</span>
-            </p>
-
-            <p>General Assembly — San Francisco, CA <br />
-              <span>Web Development Immersive</span>
-            </p>
-          </div>
-        </section>
-
-
-        <section className={styles.aboutSection}>
-          <h2 className={headingClass}>Interests</h2>
-
-          <div className={styles.aboutSectionContent}>
-            <p>Outside of design, I love music and you can often find me at shows. I also really like spending time outdoors, whether that be surfing, camping, hiking, or anything else adventurous.</p>
-          </div>
-        </section>
-
-
-        <section className={styles.aboutSection}>
-          <h2 className={headingClass}>Listening To</h2>
-
-          <div className={styles.aboutSectionContent}>
-
-          {/* wrap playlist in P tags to give same spacing */}
-          <p>
-            <Playlist className={styles.playlist} />
-          </p>
-
-          </div>
-        </section>
-
-
-      </Container>
-
-      <Footer />
-
-    </div>
-  );
+  return <DefaultLayout pageTitle="About" header={header} content={content} />;
 };
 
 export default About;

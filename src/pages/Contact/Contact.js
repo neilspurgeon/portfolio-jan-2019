@@ -1,73 +1,28 @@
 import React from 'react';
-import Header from 'components/Header/Header.js';
-import Footer from 'components/Footer/Footer.js';
+import DefaultLayout from 'layouts/DefaultLayout/DefaultLayout.js';
+import Link from 'components/Link/Link.js';
 import styles from './styles.css';
-import Container from 'components/Container/Container.js';
-import Button from 'components/Button/Button.js';
-import { Helmet } from 'react-helmet';
 
-const borderHeight = 1;
+const header = <h1 className={styles.header}>Contact</h1>;
 
-class Contact extends React.Component {
+const content = (
+  <div>
+    <h1>
+      <Link
+        to="mailto:hello@neilspurgeon.com"
+        text="hello@neilspurgeon.com"
+        defaultUnderline
+      />
+      <br />
+      <Link to="tel:18057483201" text="+1.805.748.3201" />
+    </h1>
+  </div>
+);
 
-  resize = () => {
-    let ta = this.refs.autosize;
-
-    ta.style.height = 'auto';
-    ta.style.height = ta.scrollHeight + borderHeight + 'px';
-    ta.scrollTop = ta.scrollHeight;
-  }
-
-  render() {
-    return (
-      <div>
-
-        <Helmet>
-          <title>Contact – Neil Spurgeon. Product Designer</title>
-        </Helmet>
-
-        <Header />
-
-        <div className={styles.pushFooter}>
-
-          <Container>
-
-            <section className={styles.contactWrapper}>
-              <h1 className={styles.pageHeader}>Get in touch</h1>
-              <p className={styles.pageSubHeader}>If you want to work together or just say hi.</p>
-
-              <form
-                className={styles.contactForm}
-                action="https://formspree.io/hello@neilspurgeon.com"
-                method="POST"
-                >
-                <input className={styles.input} type="text" placeholder="Name" autoComplete="name" name="name" required />
-                <input className={styles.input} type="email" placeholder="Email" autoComplete="email" name="_replyto" required />
-                <input type="hidden" name="_cc" value="neilspurgeon@gmail.com" />
-
-                <textarea
-                  ref="autosize"
-                  className={styles.textArea}
-                  onChange={this.resize}
-                  rows="1"
-                  name="message"
-                  required
-                  placeholder="Message" />
-
-                  <Button type="submit" text="Send" className={styles.submit} />
-
-              </form>
-
-            </section>
-
-          </Container>
-
-        </div>
-
-        <Footer />
-      </div>
-    );
-  }
+const Contact = () => {
+  return (
+    <DefaultLayout pageTitle="Contact" header={header} content={content} />
+  );
 };
 
 export default Contact;
