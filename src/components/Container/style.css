@@ -2,14 +2,18 @@
 
 .mainContainer {
   width: calc(100% - (var(--mu) * 2));
-  max-width: 1800px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
-
-
 
 .insetContainer {
   margin: 0 var(--mu);
+}
+
+.offsetContainer {
+  width: 75%;
+  align-self: flex-end;
 }
 
 @media (--viewport-large) {
@@ -20,15 +24,13 @@
   }
 }
 
-
-
 .leftContainer {
   margin: 0 var(--mu);
 }
 
 @media (--viewport-medium) {
   .leftContainer {
-    width: calc(50vw - var(--mu) );
+    width: calc(50vw - var(--mu));
   }
 }
 

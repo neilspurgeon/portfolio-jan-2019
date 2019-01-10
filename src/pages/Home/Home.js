@@ -20,38 +20,39 @@ const Home = props => {
 
       <Header />
 
-      <Container type={'inset'}>
+      <Container>
         <section className={styles.intro}>
           <div className={styles.introText}>
             <h1>
-              I’m a <u>designer & developer</u> based in <u>San Francisco</u>.
-              I’m currently at <u>Wells Fargo</u> designing commercial banking
-              software. In my free time I like to code JavaScript based side
-              projects.
+              I’m a designer + developer based in San Francisco. I’m currently
+              at Wells Fargo designing commercial banking software. In my free
+              time I like to code JavaScript based side projects.
             </h1>
           </div>
         </section>
 
-        <section className={styles.projects}>
-          {featuredProjects.map((project, i) => {
-            return (
-              <ProjectCard
-                key={project.data.title}
-                className={styles.card}
-                path={project.data.path}
-                image={project.data.homeCard}
-                sizes="(max-width: 751px) 100vw, 40vw"
-                altText={project.data.title}
-                title={project.data.title}
-                subTitle={project.data.subTitle}
-              />
-            );
-          })}
-        </section>
+        <Container type={'offset'}>
+          <section className={styles.projects}>
+            {featuredProjects.map((project, i) => {
+              return (
+                <ProjectCard
+                  key={project.data.title}
+                  className={styles.card}
+                  path={project.data.path}
+                  image={project.data.homeCard}
+                  sizes="(max-width: 751px) 100vw, 40vw"
+                  altText={project.data.title}
+                  title={project.data.title}
+                  subTitle={project.data.subTitle}
+                />
+              );
+            })}
+          </section>
 
-        <div className={styles.viewAll}>
-          <Cta text="View All" to="/projects" />
-        </div>
+          <div className={styles.viewAll}>
+            <Cta text="View All" to="/projects" />
+          </div>
+        </Container>
       </Container>
 
       <Footer />
