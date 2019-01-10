@@ -1,8 +1,8 @@
 @import '../../sharedStyles/variables.css';
 
 .mainContainer {
-  width: calc(100% - (var(--mu) * 2));
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 60px;
   display: flex;
   flex-direction: column;
 }
@@ -12,7 +12,8 @@
 }
 
 .offsetContainer {
-  width: 75%;
+  width: calc(75% - 90px);
+  margin-right: 90px;
   align-self: flex-end;
 }
 
