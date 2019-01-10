@@ -7,15 +7,10 @@
   border: 1px solid var(--color-medium-text);
   border-radius: 2em;
   background: none;
-  padding: 1em 1.8em .8em;
+  padding: 1em 1.8em 0.8em;
   text-align: center;
-  margin: 1em 2em;
-  will-change: background-color,
-               border,
-               color;
-  transition: .4s ease background-color,
-              .4s ease border,
-              .4s ease color;
+  will-change: background-color, border, color;
+  transition: 0.4s ease background-color, 0.4s ease border, 0.4s ease color;
   font-size: 1.6rem;
   margin: 0;
   width: fit-content;
@@ -23,7 +18,7 @@
 }
 
 .button:hover {
-  color: #FFF;
+  color: #fff;
   background-color: #000;
   border: 1px solid #000;
 }

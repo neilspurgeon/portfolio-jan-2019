@@ -7,7 +7,7 @@ import { withRouter } from 'react-router-dom';
 const Header = props => {
   return (
     <div>
-      <Container type="inset">
+      <Container>
         <header className={styles.header}>
           <NavLink className={styles.logo} to={'/'}>
             Neil Spurgeon
