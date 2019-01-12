@@ -41,35 +41,35 @@
 
   /* Keep Padding Consistent */
   --vertical-spacing: {
-    padding: 40px 0;
+    padding: 30px 0;
 
     @media (--viewport-small) {
+      padding: 40px 0;
+    }
+
+    @media (--viewport-medium) {
       padding: 60px 0;
     }
 
-    @media (--viewport-medium) {
+    /* @media (--viewport-large) {
       padding: 80px 0;
-    }
-
-    @media (--viewport-large) {
-      padding: 100px 0;
-    }
+    } */
   }
 
   --vertical-margin: {
-    margin: 40px 0;
+    margin: 30px 0;
 
     @media (--viewport-small) {
-      margin: 60px 0;
+      margin: 40px 0;
     }
 
     @media (--viewport-medium) {
-      margin: 80px 0;
+      margin: 60px 0;
     }
-
+    /*
     @media (--viewport-large) {
-      margin: 100px 0;
-    }
+      margin: 80px 0;
+    } */
   }
 }
 

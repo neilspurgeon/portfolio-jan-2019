@@ -112,14 +112,16 @@ h4,
 p,
 .p {
   font-family: 'maison neue', sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 2;
   letter-spacing: 0.01em;
   margin: 1.6em 0 0;
   color: var(--color-medium-text);
-  @media screen and (min-width: 768px) {
-    font-size: 1.6rem;
+
+  @media (--viewport-medium) {
+    font-weight: 300;
+    font-size: 1.8rem;
   }
 }
 

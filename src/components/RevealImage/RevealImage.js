@@ -6,7 +6,7 @@ class RevealImage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      classes: [props.revealClass || styles.clipReveal, props.className],
+      classes: [props.revealClass || styles.clipReveal, this.props.className],
     };
   }
 

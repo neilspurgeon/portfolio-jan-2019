@@ -9,13 +9,6 @@ const Container = props => {
       </div>
     );
 
-  if (props.type === 'left')
-    return (
-      <div className={[styles.leftContainer, props.className].join(' ')}>
-        {props.children}
-      </div>
-    );
-
   if (props.type === 'offset')
     return (
       <div className={[styles.offsetContainer, props.className].join(' ')}>
