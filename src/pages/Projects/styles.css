@@ -1,9 +1,6 @@
 @import '../../sharedStyles/variables.css';
 
 .projects {
-  /* display: grid; */
-  /* grid-gap: var(--mu); */
-
   @media (--viewport-small) {
     display: grid;
     grid-template-columns: 1fr 1fr;

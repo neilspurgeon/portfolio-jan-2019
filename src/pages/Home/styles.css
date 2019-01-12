@@ -1,20 +1,14 @@
 @import '../../sharedStyles/variables.css';
 
 .intro {
-  padding-top: 1em;
   padding-bottom: 15em;
   background-color: '#333';
 }
 
-.introText {
-  position: relative;
-}
-
-.introText h1 {
+.intro h1 {
   max-width: 17em;
   margin-top: 0.6em;
-  margin-bottom: 0.6em;
-  margin-left: -0.02em;
+  margin-left: -0.05em;
   font-weight: 300;
 }
 
@@ -50,6 +44,7 @@
 }
 
 .viewAll {
+  /* text-align: center; */
   padding: 0 0 200px;
 }
 

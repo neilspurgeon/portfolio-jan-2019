@@ -1,29 +1,25 @@
 @import '../../sharedStyles/variables.css';
 
-
-.projectHeader {
-  padding: 100px 0 150px;
-}
-
-.title {
-  margin: 0 0 .2em;
-  text-align: center;
+.projectHeader h1 {
+  margin-top: 0.6em;
+  margin-left: -0.05em;
+  padding-bottom: 1.2em;
 }
 
 .textRevealWrapper {
   overflow: hidden;
 }
 
-.textRevealText {
+/* .textRevealText {
   display: block;
   transition-property: transform;
-  transition-delay: .2s;
+  transition-delay: 0.2s;
   transition-duration: 2s;
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   transform: translateY(150%);
   will-change: transform;
 }
 
-.textRevealText.inView{
+.textRevealText.inView {
   transform: translateY(0);
-}
+} */

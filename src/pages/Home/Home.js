@@ -22,12 +22,10 @@ const Home = props => {
 
       <Container>
         <section className={styles.intro}>
-          <div className={styles.introText}>
-            <h1>
-              Product designer and developer based in San Francisco. Currently
-              at Wells Fargo, designing commercial banking software.
-            </h1>
-          </div>
+          <h1>
+            Product designer and developer based in San Francisco. Currently at
+            Wells Fargo, designing commercial banking software.
+          </h1>
         </section>
 
         <div className={styles.content}>
