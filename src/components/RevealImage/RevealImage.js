@@ -6,10 +6,7 @@ class RevealImage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      classes: [
-        props.revealClass || styles.clipReveal,
-        props.className
-      ]
+      classes: [props.revealClass || styles.clipReveal, props.className],
     };
   }
 
@@ -18,20 +15,23 @@ class RevealImage extends React.Component {
       classes: [
         this.props.revealClass || styles.clipReveal,
         this.props.inViewClass || styles.inView,
-        this.props.className
-      ]
+        this.props.className,
+      ],
     });
   };
 
   render() {
     return (
-      <Waypoint bottomOffset={this.props.bottomOffset || '200px'} onEnter={this.handleEnter}>
+      <Waypoint
+        bottomOffset={this.props.bottomOffset || '200px'}
+        onEnter={this.handleEnter}
+      >
         <span className={this.state.classes.join(' ')}>
           {this.props.children}
         </span>
       </Waypoint>
     );
   }
-};
+}
 
 export default RevealImage;

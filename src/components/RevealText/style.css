@@ -11,6 +11,6 @@
   will-change: transform;
 }
 
-.textRevealText.inView{
+.textRevealText.inView {
   transform: translateY(0);
 }
