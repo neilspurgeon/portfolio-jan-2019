@@ -2,14 +2,12 @@ import React from 'react';
 import DefaultLayout from 'layouts/DefaultLayout/DefaultLayout.js';
 import styles from './styles.css';
 
-const header = <h1 className={styles.header}>About</h1>;
-
 const content = (
   <div>
     <h1 className={styles.intro}>
-      I'm a designer and developer currently based in San Francisco. While
-      primarily working as designer, I write lots of code outside of work and
-      love the empowerment it gives me.
+      I'm a designer and developer based in San Francisco. While primarily
+      working as designer, I write lots of code outside of work and love the
+      empowerment it gives me.
     </h1>
     <h2 className={styles.sectionHeading}>Experience</h2>
     <p className={styles.body}>
@@ -54,7 +52,9 @@ const content = (
 );
 
 const About = () => {
-  return <DefaultLayout pageTitle="About" header={header} content={content} />;
+  return (
+    <DefaultLayout pageTitle="About" headerText={'About'} content={content} />
+  );
 };
 
 export default About;

@@ -2,7 +2,7 @@
 
 .mainContainer {
   width: 100%;
-  padding: 0 60px;
+  padding: 0 var(--su);
   display: flex;
   flex-direction: column;
 }
@@ -12,8 +12,7 @@
 }
 
 .offsetContainer {
-  width: calc(75% - 90px);
-  margin-right: 90px;
+  width: 75%;
   align-self: flex-end;
 }
 

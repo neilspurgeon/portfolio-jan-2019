@@ -3,7 +3,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: var(--su) 0 0;
+  padding: calc(var(--su) * 0.75) 0 0;
 }
 
 .nav {
@@ -18,16 +18,18 @@
 }
 
 .navLink:hover {
-  opacity: 0.7;
+  /* opacity: 0.7; */
+  text-decoration: line-through;
 }
 
 .navLink.isActive {
-  opacity: 0.5;
+  text-decoration: line-through;
 }
 
 .logo {
   color: #000;
   text-decoration: none;
+  font-weight: 700;
 }
 
 .list {

@@ -10,7 +10,7 @@ const Header = props => {
       <Container>
         <header className={styles.header}>
           <NavLink className={styles.logo} to={'/'}>
-            Neil Spurgeon
+            NS
           </NavLink>
 
           <nav className={styles.nav}>

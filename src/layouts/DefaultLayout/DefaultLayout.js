@@ -17,9 +17,7 @@ const DefaultLayout = props => {
 
         <Container>
           <div className={styles.pageLayout}>
-            <section className={styles.header}>
-              <div className={styles.headerText}>{props.header}</div>
-            </section>
+            <h1 className={styles.headerText}>{props.headerText}</h1>
 
             <section>{props.content}</section>
           </div>

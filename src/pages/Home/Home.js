@@ -24,14 +24,15 @@ const Home = props => {
         <section className={styles.intro}>
           <div className={styles.introText}>
             <h1>
-              I’m a designer + developer based in San Francisco. I’m currently
-              at Wells Fargo designing commercial banking software. In my free
-              time I like to code JavaScript based side projects.
+              Product designer and developer based in San Francisco. Currently
+              at Wells Fargo, designing commercial banking software.
             </h1>
           </div>
         </section>
 
-        <Container type={'offset'}>
+        <div className={styles.content}>
+          <h4 className={styles.projectsHeader}>Featured Projects</h4>
+
           <section className={styles.projects}>
             {featuredProjects.map((project, i) => {
               return (
@@ -52,7 +53,7 @@ const Home = props => {
           <div className={styles.viewAll}>
             <Cta text="View All" to="/projects" />
           </div>
-        </Container>
+        </div>
       </Container>
 
       <Footer />

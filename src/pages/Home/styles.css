@@ -1,8 +1,8 @@
 @import '../../sharedStyles/variables.css';
 
 .intro {
-  padding-top: 10em;
-  padding-bottom: 10em;
+  padding-top: 1em;
+  padding-bottom: 15em;
   background-color: '#333';
 }
 
@@ -10,17 +10,18 @@
   position: relative;
 }
 
-.introText > h1 {
-  max-width: 24em;
+.introText h1 {
+  max-width: 17em;
   margin-top: 0.6em;
   margin-bottom: 0.6em;
+  margin-left: -0.02em;
+  font-weight: 300;
 }
 
 .projects {
   padding: 0;
   margin: 0;
   display: grid;
-  grid-gap: var(--mu);
   opacity: 0;
   animation: projectsKeyframes 0.8s forwards;
   animation-delay: 0.3s;
@@ -28,7 +29,24 @@
 
   @media (--viewport-small) {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
   }
+
+  @media (--viewport-medium) {
+    grid-gap: 25px;
+  }
+}
+
+.content {
+  @media (--viewport-medium) {
+    display: grid;
+    grid-template-columns: 25% 75%;
+  }
+}
+
+.projectsHeader {
+  color: var(--color-light-text);
+  margin-top: 0;
 }
 
 .viewAll {

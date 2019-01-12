@@ -25,9 +25,9 @@
   --color-dark-bg: #111;
   --color-light-bg: #f7f5f5;
 
-  --color-dark-text: #000;
-  --color-medium-text: #5c5c5c;
-  --color-light-text: #888;
+  --color-dark-text: #333;
+  --color-medium-text: #666;
+  --color-light-text: #999;
 
   /* Margins, Padding, Spacing
   ––––––––––––––––––––––––––––––– */
@@ -78,3 +78,10 @@
     --su: 50px;
   }
 }
+
+/* @media (--viewport-medium) {
+  :root {
+    --su: 50px;
+  }
+}
+ */

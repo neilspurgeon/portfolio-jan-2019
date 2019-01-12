@@ -21,7 +21,11 @@ const content = (
 
 const Contact = () => {
   return (
-    <DefaultLayout pageTitle="Contact" header={header} content={content} />
+    <DefaultLayout
+      pageTitle="Contact"
+      headerText={'Contact'}
+      content={content}
+    />
   );
 };
 
