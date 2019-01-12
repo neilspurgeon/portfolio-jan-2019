@@ -53,7 +53,7 @@ h1,
 h2,
 .h2 {
   font-family: 'maison neue', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.6rem;
   line-height: 1.618;
   color: var(--color-dark-text);
