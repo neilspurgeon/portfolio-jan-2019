@@ -42,9 +42,9 @@ const content = (
     </p>
 
     <p className={styles.body}>
-      California Polytechnic State University — San Luis Obispo,
+      California Polytechnic State University — San Luis Obispo, CA
       <br />
-      CA BFA Art & Design; Graphic Design Concentration
+      BFA Art & Design; Graphic Design Concentration
       <br />
       Graduated 2013
     </p>

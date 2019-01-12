@@ -48,11 +48,11 @@ const Home = props => {
                 />
               );
             })}
-          </section>
 
-          <div className={styles.viewAll}>
-            <Cta text="View All" to="/projects" />
-          </div>
+            <div className={styles.viewAll}>
+              <Cta text="View All" to="/projects" />
+            </div>
+          </section>
         </div>
       </Container>
 
