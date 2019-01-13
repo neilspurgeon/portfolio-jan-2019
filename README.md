@@ -1,6 +1,16 @@
 # Portfolio
 
-Bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+## Screen Shots
+
+![home](screenshots/home.png)
+
+![home](screenshots/projects.png)
+
+![home](screenshots/project.png)
+
+![about](screenshots/about.png)
+
+![contact](screenshots/contact.png)
 
 ## How it works
 
@@ -11,11 +21,3 @@ Each project requires a data.js file to that stores standard project information
 - CSS Next syntax through postcss
 - CSS Modules
 - Waypoints for triggering scroll based animations
-
-## Screen Shots
-
-![home](screenshots/home.png)
-
-![about](screenshots/about.png)
-
-![contact](screenshots/contact.png)

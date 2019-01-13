@@ -5,20 +5,24 @@ import styles from './styles.css';
 const content = (
   <div>
     <h1 className={styles.intro}>
-      I'm a designer and developer based in San Francisco. While primarily
+      Hi, I'm Neil. I'm a designer and developer in San Francisco, CA. I
+      currently work as a designer, but am also skilled in full stack web
+      development. Outside of work, I'm constantly coding side projects — most
+      recently with React Native.
+      {/* I'm a designer and developer based in San Francisco. While primarily
       working as designer, I write lots of code outside of work and love the
-      empowerment it gives me.
+      empowerment it gives me. */}
     </h1>
     <h2 className={styles.sectionHeading}>Experience</h2>
     <p className={styles.body}>
       Wells Fargo — San Francisco, CA
       <br />
-      Visual Designer, Jul. 2018 - Present
+      Visual Designer, Jul. 2018 - Current
     </p>
     <p className={styles.body}>
-      Hewlett Packard — Palo Alto, CA
+      Hewlett-Packard — Palo Alto, CA
       <br />
-      Designer (Contract), Mar. 2018 - Jul. 2018
+      Designer, Mar. 2018 - Jul. 2018 (Contract)
     </p>
     <p className={styles.body}>
       Hathway — San Luis Obispo, CA
