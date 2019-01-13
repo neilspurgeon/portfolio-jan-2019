@@ -15,14 +15,28 @@
   text-decoration: none;
   color: var(--color-cool-gray);
   transition: 0.2s ease opacity;
+  position: relative;
+  display: block;
 }
 
-.navLink:hover {
-  text-decoration: line-through;
+.navLink:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: var(--color-cool-gray);
+  position: absolute;
+  left: -2px;
+  top: 50%;
+  transition: width 0.2s cubic-bezier(0.2, 0.96, 0.34, 1);
 }
 
-.navLink.isActive {
-  text-decoration: line-through;
+.navLink:hover:after {
+  width: calc(100% + 4px);
+}
+
+.navLink.isActive:after {
+  width: calc(100% + 4px);
 }
 
 .logo {
