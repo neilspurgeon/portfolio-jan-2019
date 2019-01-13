@@ -10,7 +10,7 @@ const ProjectOverview = props => {
         <p className={styles.intro}>{props.intro}</p>
       </div>
 
-      <div>
+      <div className={styles.details}>
         {props.roles && (
           <div>
             <h2 className={styles.sectionHeader}>Role</h2>

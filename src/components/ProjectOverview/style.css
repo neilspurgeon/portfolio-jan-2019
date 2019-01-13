@@ -8,6 +8,12 @@
   }
 }
 
+.details {
+  @media (--viewport-medium) {
+    margin-top: 0.5em;
+  }
+}
+
 .wrapper {
   font-size: 1.6rem;
   @apply --vertical-spacing;
@@ -41,12 +47,16 @@
 
 .sectionHeader {
   composes: label from '../../sharedStyles/index.css';
+  color: var(--color-cool-black);
 }
 
 .ul {
   list-style: none;
   margin: 0 0 40px;
   padding: 0;
+  color: var(--color-light-text);
+  line-height: 1.6;
+  font-weight: 300;
 }
 
 .projectLink {
