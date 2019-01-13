@@ -1,7 +1,11 @@
 @import '../../sharedStyles/variables.css';
 
 .projectHeader h1 {
-  margin-top: 0.6em;
+  margin-top: 1.6em;
   margin-left: -0.05em;
   padding-bottom: 1.2em;
+
+  @media (--viewport-small) {
+    margin-top: 0.6em;
+  }
 }
