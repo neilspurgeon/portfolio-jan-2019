@@ -25,6 +25,7 @@ const ProjectRoute = ({ component: Component, ...rest }) => (
         title={rest.title}
         subTitle={rest.subTitle}
         hero={rest.hero}
+        heroVideo={rest.heroVideo}
         nextProjectTitle={rest.nextProjectTitle}
         nextProjectImage={rest.nextProjectImage}
         nextProjectAltText={rest.nextProjectAltText}
@@ -63,6 +64,7 @@ const Routes = props => (
             title={project.data.title}
             subTitle={project.data.subTitle}
             hero={project.data.hero}
+            heroVideo={project.data.heroVideo}
             nextProjectTitle={nextProject.data.title}
             nextProjectImage={nextProject.data.card}
             nextProjectAltText={nextProject.data.altText}

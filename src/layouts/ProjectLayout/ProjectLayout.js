@@ -2,63 +2,40 @@ import React from 'react';
 import Header from 'components/Header/Header.js';
 import ProjectHeader from 'components/ProjectHeader/ProjectHeader.js';
 import ProjectHero from 'components/ProjectHero/ProjectHero.js';
+import ProjectHeroVideo from 'components/ProjectHeroVideo/ProjectHeroVideo.js';
 import NextProject from 'components/NextProject/NextProject.js';
 import Footer from 'components/Footer/Footer.js';
 import { Helmet } from 'react-helmet';
 
-class ProjectLayout extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showProjectAside: false
-    };
-  }
+const ProjectLayout = props => {
+  console.log(props);
+  return (
+    <div>
+      <Helmet>
+        <title>{props.title} – Neil Spurgeon. Product Designer</title>
+      </Helmet>
 
-  handleEnter = () => {
-    this.setState({
-      showProjectAside: true
-    });
-  }
+      <Header />
 
-  handleLeave = () => {
-    this.setState({
-      showProjectAside: false
-    });
-  }
+      <ProjectHeader title={props.title} subTitle={props.subTitle} />
 
-  render() {
-    return (
-      <div>
+      {props.heroVideo ? (
+        <ProjectHeroVideo src={props.heroVideo} altText={props.altText} />
+      ) : (
+        <ProjectHero image={props.hero} altText={props.altText} />
+      )}
 
-        <Helmet>
-          <title>{this.props.title} – Neil Spurgeon. Product Designer</title>
-        </Helmet>
+      {props.children}
 
-        <Header />
+      <NextProject
+        image={props.nextProjectImage}
+        title={props.nextProjectTitle}
+        path={props.nextProjectPath}
+      />
 
-        <ProjectHeader
-          title={this.props.title}
-          subTitle={this.props.subTitle}
-        />
-
-        <ProjectHero
-          image={this.props.hero}
-          altText={this.props.altText}
-        />
-
-        {this.props.children}
-
-        <NextProject
-          image={this.props.nextProjectImage}
-          title={this.props.nextProjectTitle}
-          path={this.props.nextProjectPath}
-        />
-
-        <Footer />
-
-      </div>
-    );
-  }
+      <Footer />
+    </div>
+  );
 };
 
 export default ProjectLayout;
