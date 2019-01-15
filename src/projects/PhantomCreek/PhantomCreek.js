@@ -17,12 +17,14 @@ const PhantomCreek = () => {
   return (
     <div>
       <ProjectOverview
-        intro="Ingear is an auto safety device startup formed in Beijing, China after the devastating result of a massive 2012 flood in that country They provide quality products that look at home in luxury car interiors."
+        intro="Phantom Creek Estates is a new winery in British Columbia's Okanagan Valley. The region is filled with rich textures and stunning landscapes that were used to influence the design."
         roles={['Website Design']}
         credits={[
           'Design Studio: Makers & Allies',
           'Creative Direction by: Garrett Deiter',
         ]}
+        linkUrl="https://phantomcreekestates.com/"
+        linkText="phantomcreekestates.com"
       />
 
       <ProjectSection>
