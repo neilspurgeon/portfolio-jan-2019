@@ -21,12 +21,12 @@ import Fontifi from './Fontifi/Fontifi.js';
 
 const projects = [
   {
-    data: PhantomCreekData,
-    component: PhantomCreek,
-  },
-  {
     data: nomNomData,
     component: NomNom,
+  },
+  {
+    data: fontifiData,
+    component: Fontifi,
   },
   {
     data: coffeeBeanData,
@@ -40,9 +40,10 @@ const projects = [
     data: FreshStepData,
     component: FreshStep,
   },
+
   {
-    data: fontifiData,
-    component: Fontifi,
+    data: PhantomCreekData,
+    component: PhantomCreek,
   },
   {
     data: JuniperRidgeData,
