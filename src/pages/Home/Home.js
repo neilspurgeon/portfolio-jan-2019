@@ -23,8 +23,9 @@ const Home = props => {
       <Container>
         <section className={styles.intro}>
           <h1>
-            Product designer and developer based in San Francisco. Currently at
-            Wells Fargo, designing commercial banking software.
+            Product designer and hobbyist developer based in San Francisco.
+            {/* Product designer and hobbyist developer based in San Francisco.
+            Currently at Square designing on the Point of Sale team. */}
           </h1>
         </section>
 
