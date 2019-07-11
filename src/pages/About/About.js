@@ -15,9 +15,14 @@ const content = (
     </h1>
     <h2 className={styles.sectionHeading}>Experience</h2>
     <p className={styles.body}>
+      Square — San Francisco, CA
+      <br />
+      Product Designer, Jul. 2019 - Current
+    </p>
+    <p className={styles.body}>
       Wells Fargo — San Francisco, CA
       <br />
-      Visual Designer, Jul. 2018 - Current
+      Visual UX Designer, Jul. 2018 - Jun. 2019
     </p>
     <p className={styles.body}>
       Hewlett-Packard — Palo Alto, CA
