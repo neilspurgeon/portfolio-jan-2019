@@ -5,13 +5,9 @@ import styles from './styles.css';
 const content = (
   <div>
     <h1 className={styles.intro}>
-      Hi, I'm Neil. I'm a designer and developer in San Francisco, CA. I
-      currently work as a designer, but am also skilled in full stack web
-      development. Outside of work, I'm constantly coding side projects — most
-      recently with React Native.
-      {/* I'm a designer and developer based in San Francisco. While primarily
-      working as designer, I write lots of code outside of work and love the
-      empowerment it gives me. */}
+      Hi, I'm Neil — product designer who also likes to play with code. I'm
+      currently at Square in San Francisco, designing the future of point of
+      sale software.
     </h1>
     <h2 className={styles.sectionHeading}>Experience</h2>
     <p className={styles.body}>

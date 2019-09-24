@@ -23,9 +23,7 @@ const Home = props => {
       <Container>
         <section className={styles.intro}>
           <h1>
-            Product designer and hobbyist developer based in San Francisco.
-            {/* Product designer and hobbyist developer based in San Francisco.
-            Currently at Square designing on the Point of Sale team. */}
+            Product designer based in San Francisco. Currently at Square.
           </h1>
         </section>
 
